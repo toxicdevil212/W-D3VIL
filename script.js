@@ -6,7 +6,7 @@ document.getElementById('generateBtn').addEventListener('click', function () {
     const amount = document.getElementById('amount').value;
 
     if (firstName && surname && nickname && dob && amount) {
-        const passwords = generatePasswords(firstName, surname, nickname, dob, amount);
+        const passwords = generatePasswords(firstName, surname, nickname, amount);
         document.getElementById('generatedPasswords').innerText = passwords.join('\n');
         document.getElementById('downloadBtn').style.display = 'inline-block';
         document.getElementById('copyBtn').style.display = 'inline-block';
